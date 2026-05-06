@@ -2,13 +2,14 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "moduleResolution": "bundler",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
-    "target": "esnext",
+    "target": "es2020",
     "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
@@ -16,7 +17,7 @@
     // and npm install -D @types/node
 
     "experimentalDecorators": true,
-    // "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": true,
 
     // Other Outputs
     "sourceMap": true,
@@ -24,8 +25,8 @@
     "declarationMap": true,
 
     // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+    // "noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true,
 
     // Style Options
     // "noImplicitReturns": true,
@@ -37,11 +38,13 @@
 
     // Recommended Options
     "strict": true,
-    "jsx": "react-jsx",
+    // "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
+    // "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "src/tests"]
 }

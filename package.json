@@ -10,25 +10,29 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     },
     "./middleware/express": {
+      "types": "./dist/middleware/express.d.ts",
       "import": "./dist/middleware/express.js",
-      "types":  "./dist/middleware/express.d.ts"
+      "require": "./dist/middleware/express.cjs"
     },
     "./middleware/fastify": {
+      "types": "./dist/middleware/fastify.d.ts",
       "import": "./dist/middleware/fastify.js",
-      "types":  "./dist/middleware/fastify.d.ts"
+      "require": "./dist/middleware/fastify.cjs"
     },
     "./middleware/hono": {
+      "types": "./dist/middleware/hono.d.ts",
       "import": "./dist/middleware/hono.js",
-      "types":  "./dist/middleware/hono.d.ts"
+      "require": "./dist/middleware/hono.cjs"
     },
     "./middleware/nestjs": {
+      "types": "./dist/middleware/nestjs.d.ts",
       "import": "./dist/middleware/nestjs.js",
-      "types":  "./dist/middleware/nestjs.d.ts"
+      "require": "./dist/middleware/nestjs.cjs"
     }
   },
   "files": [
@@ -76,25 +80,32 @@
     "node": ">=18.0.0"
   },
   "peerDependencies": {
-    "express":  ">=4.0.0",
-    "fastify":  ">=4.0.0",
-    "hono":     ">=4.0.0",
-    "ioredis":  ">=5.0.0"
+    "express": ">=4.0.0",
+    "fastify": ">=4.0.0",
+    "hono": ">=4.0.0",
+    "ioredis": ">=5.0.0"
   },
   "peerDependenciesMeta": {
-    "express":  { "optional": true },
-    "fastify":  { "optional": true },
-    "hono":     { "optional": true },
-    "ioredis":  { "optional": true }
+    "express": {
+      "optional": true
+    },
+    "fastify": {
+      "optional": true
+    },
+    "hono": {
+      "optional": true
+    },
+    "ioredis": {
+      "optional": true
+    }
   },
-  "dependencies": {},
   "devDependencies": {
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
     "@nestjs/testing": "^11.0.0",
     "@types/express": "^5.0.0",
-    "@types/node": "^20.0.0",
+    "@types/node": "^20.19.39",
     "@types/supertest": "^7.0.0",
     "@vitest/coverage-v8": "^2.0.0",
     "dotenv": "^16.0.0",

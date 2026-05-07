@@ -8,7 +8,7 @@ export default defineConfig({
         "middleware/express": "src/middlewares/express.ts",
         "middleware/fastify": "src/middlewares/fastify.ts",
         "middleware/hono": "src/middlewares/hono.ts",
-        "middleware/nestjs": "src/middlewares/nestjs.ts",
+        "middleware/nestjs": "src/nest/index.ts"
     },
     format: ["esm", "cjs"],
     dts: true,

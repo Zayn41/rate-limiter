@@ -263,46 +263,6 @@ export interface RateLimitConfig<TReq = unknown> {
     headers?: boolean;
 
     /**
-        * Include legacy X-RateLimit-* headers in responses.
-        * For backward compatibility with older clients.
-        * 
-        * @type {boolean}
-        * @default false
-        * 
-        * Legacy headers included:
-        * - X-RateLimit-Limit
-        * - X-RateLimit-Remaining
-        * - X-RateLimit-Reset
-        * 
-        * @example
-        * ```typescript
-        * // Enable legacy headers
-        * legacyHeaders: true
-        * 
-        * // Response headers:
-        * // X-RateLimit-Limit: 100
-        * // X-RateLimit-Remaining: 45
-        * // X-RateLimit-Reset: 1713312000
-        * ```
-    */
-    legacyHeaders?: boolean;
-
-    /**
-        * Use IETF standard RateLimit-* headers (alternative to legacy headers).
-        * Recommended for new implementations.
-        * 
-        * @type {boolean}
-        * @default true
-        * 
-        * @example
-        * ```typescript
-        * // Use IETF standard headers
-        * standardHeaders: true
-        * ```
-    */
-    standardHeaders?: boolean;
-
-    /**
         * Fail open behavior when the store is unavailable.
         * If true, allows all requests through when store fails.
         * If false, rejects all requests when store fails (fail closed).

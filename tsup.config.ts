@@ -14,6 +14,27 @@ export default defineConfig({
     dts: true,
     clean: true,
     sourcemap: true,
+    // Don't bundle these — users bring their own
+    external: [
+        // Frameworks
+        "express",
+        "fastify",
+        "hono",
+        "ioredis",
+
+        // NestJS — entire ecosystem marked external
+        "@nestjs/common",
+        "@nestjs/core",
+        "@nestjs/platform-express",
+        "reflect-metadata",
+        "rxjs",
+        "rxjs/operators",
+
+        // NestJS optional deps that cause bundle errors
+        "class-transformer",
+        "class-validator",
+    ],
+
     onSuccess: async () => {
         // Copy Lua scripts to dist because tsup doesn't bundle non-TS files
         const srcLua  = join("src",  "store", "lua");

@@ -1,6 +1,6 @@
 {
   "name": "nexus-limiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Production-ready rate limiter for Node.js — token bucket, sliding window, fixed window. Express, Fastify, NestJS, Hono support. Redis and in-memory stores.",
   "author": "Zayn Khan",
   "license": "MIT",

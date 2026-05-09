@@ -42,8 +42,21 @@ Most rate limiters give you one algorithm and call it done. nexus-limiter gives 
 
 ```bash
 npm install nexus-limiter
+
+# Only if using Redis store
+npm install ioredis
 ```
 
+## Usage with MemoryStore (no extra dependencies)
+```typescript
+import { RateLimiter, MemoryStore } from "nexus-limiter";
+```
+
+## Usage with RedisStore
+```typescript
+import { RateLimiter } from "nexus-limiter";
+import { RedisStore } from "nexus-limiter/redis";
+```
 ### Optional peer dependencies
 
 Install only what you need:

@@ -1,2 +1,2 @@
-import { RateLimitGuard } from "./guard";
-import { RateLimitModule } from "./module";
+export { RateLimitGuard } from "./guard";
+export { RateLimitModule } from "./module";

@@ -7,13 +7,6 @@ export { MemoryStore } from "./store/memory";
 // Algorithms 
 export { Algorithm } from "./types/config";
 
-// Middleware (convenience re-exports)
-export { expressRateLimiter } from "./middlewares/express";
-export { fastifyRateLimiter } from "./middlewares/fastify";
-export { honoRateLimiter } from "./middlewares/hono";
-export { RateLimitGuard } from "./nest/guard";
-export { RateLimitModule } from "./nest/module";
-
 // Types 
 export type { RateLimitConfig } from "./types/config";
 export type { RateLimitResult } from "./types/result";

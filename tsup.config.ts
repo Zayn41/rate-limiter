@@ -5,7 +5,7 @@ import { join } from "path";
 export default defineConfig({
     entry: {
         "index": "src/index.ts",
-        "store/redis-export":     "src/store/redis-export.ts",
+        "store/redis-export": "src/store/redis-export.ts",
         "middleware/express": "src/middlewares/express.ts",
         "middleware/fastify": "src/middlewares/fastify.ts",
         "middleware/hono": "src/middlewares/hono.ts",

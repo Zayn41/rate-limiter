@@ -15,6 +15,7 @@ export default defineConfig({
     dts: true,
     clean: true,
     sourcemap: true,
+    shims: true,
     // Don't bundle these — users bring their own
     external: [
         // Frameworks
